@@ -1,0 +1,33 @@
+{
+  "name": "chat-server",
+  "version": "1.0.0",
+  "description": "chat express",
+  "main": "index.js",
+  "author": "Yang Aobo",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/cli": "^7.12.13",
+    "@babel/core": "^7.12.13",
+    "@babel/preset-env": "^7.12.13",
+    "@babel/register": "^7.12.13",
+    "@withvoid/make-validation": "^1.0.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.11.15",
+    "morgan": "^1.10.0",
+    "rimraf": "^3.0.2",
+    "socket.io": "^3.1.1",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "scripts": {
+    "start": "nodemon server/index.js",
+    "start:server": "node server/index.js",
+    "transpile": "babel ./server --out-dir dist-server",
+    "clean": "rimraf dist-server"
+  },
+  "type": "module"
+}
